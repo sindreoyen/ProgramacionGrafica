@@ -1,6 +1,6 @@
-### Intro
-This first project consists of creating a simple bar chart display, when utilizing processing. 
-The `BarChart` class in BarChart.pde contains all the requested functionality from the task description.
+### Introducción
+Este primer proyecto consiste en crear un simple gráfico de barras, utilizando Processing. 
+La clase `BarChart` en BarChart.pde contiene toda la funcionalidad solicitada en la descripción de la tarea.
 
-### How to run
-Open the two files in an active window of the Processing desktop application and run the Processing 
+### Cómo ejecutar
+Abra los dos archivos en una ventana activa de la aplicación de escritorio Processing y pulse el botón ejecutar para compilar y ejecutar el programa.
