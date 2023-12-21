@@ -1,5 +1,5 @@
 public class Person {
-    // --- Attributes ---
+    // --- 1 Attributes ---
     // ------------------
     /** The x coordinate of the person. */
     private float x;
@@ -10,7 +10,7 @@ public class Person {
     /** The available sprites for the person. */
     private PImage[] sprites;
 
-    // --- Constructor ---
+    // --- 2 Constructor ---
     // -------------------
     public Person(float x, float y) {
         this.x = x;
@@ -23,8 +23,10 @@ public class Person {
         sprite = sprites[0];
     }
 
-    // --- Methods ---
+    // --- 3 Methods ---
     // ---------------
+
+    // -- 3.1 Draw and move --
     /** Draws the person on the screen. */
     public void draw() {
         image(sprite, x, y);
@@ -46,8 +48,7 @@ public class Person {
         }
     }
 
-    // --- Getters ---
-    // ---------------
+    // -- 3.2 Getters --
     public float getX() {
         return x;
     }
