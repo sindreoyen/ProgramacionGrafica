@@ -22,7 +22,7 @@ public class Moon {
     // ------------------
     // -- 3.0 Update --
     private void update() {
-        this.t += 1.3;
+        this.t += 4.8; // Speed of the moon, tweleve times faster than the earth
         this.orbit.updateCenter(this.earth.getX(), this.earth.getY());
         float[] pos = this.orbit.getPositionAt(radians(this.t));
         this.x = pos[0];
