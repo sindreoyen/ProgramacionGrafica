@@ -11,11 +11,11 @@ public class BarChart {
 
   // -- 1.2 Layout --
   /** The gap between the bars */
-  private int barGap = 0;
+  private int barGap = 4;
   /** The labels of the bars */
   private String[] barLabels;
   /** The color of the bars */
-  private color barColor = color(255);
+  private color barColor = color(130);
   /** The background color of the chart */
   private color backgroundColor = color(0);
   /** The axis color of the chart */
@@ -103,7 +103,12 @@ public class BarChart {
   }
 
   // -- 3.2 Getters and setters --
-  void setData(float[] data) { this.data = data; }
+  void setData(float[] data) { 
+    this.data = data; 
+    float minData = min(data);
+    if (minValor == -1) minValor = minData > 0 ? 0 : int(minData - 1);
+    if (maxValor == -1) maxValor = int(max(data));
+  }
   void setBarGap(int barGap) { this.barGap = barGap; }
   void setBarColor(color barColor) { this.barColor = barColor; }
   void setBackgroundColor(color backgroundColor) { this.backgroundColor = backgroundColor; }
